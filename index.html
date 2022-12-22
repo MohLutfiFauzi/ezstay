@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>ezStay</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar mb-lg-3">
+        <div class="container-lg">
+          <a href="#" class="navbar-brand logo">ezStay</a>
+          <a href="#" class="nav-item">Log In</a>
+          <a href="#" class="button-signup">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+    <main class="container-lg">
+      <div class="banner">
+        <img
+          src="./assets/img/hero-picture.png"
+          class="img-fluid banner-img"
+          alt="hero picture"
+        />
+        <h2 class="banner-title">Travel With Us, Cheaply</h2>
+        <p class="banner-weather">28°C Cloudy</p>
+        <div class="banner-previous">
+          <img
+            src="./assets/img/Previous.png"
+            class="img-fluid btn-previous"
+            alt="hero picture"
+          />
+          <img
+            src="./assets/img/Next.png"
+            class="img-fluid btn-previous"
+            alt="hero picture"
+          />
+        </div>
+
+        <div
+          class="container-info d-flex justify-content-between align-items-center"
+        >
+          <div class="d-flex">
+            <div class="me-5">
+              <h3 class="info-item">Location</h3>
+              <div class="d-flex">
+                <p class="info-item-description">Your Destination</p>
+                <svg
+                  width="14"
+                  height="20"
+                  viewBox="0 0 14 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 0C3.14012 0 0 3.31421 0 7.38809C0 8.72925 0.569882 10.1717 0.593765 10.2325C0.777824 10.6936 1.141 11.4098 1.40288 11.8296L6.20241 19.505C6.39882 19.8196 6.68953 20 7 20C7.31047 20 7.60118 19.8196 7.79759 19.5054L12.5975 11.8296C12.8598 11.4098 13.2226 10.6936 13.4066 10.2325C13.4305 10.1721 14 8.72968 14 7.38809C14 3.31421 10.8599 0 7 0ZM12.6474 9.89526C12.4831 10.3086 12.145 10.9748 11.9099 11.3512L7.10994 19.0269C7.01524 19.1786 6.98518 19.1786 6.89047 19.0269L2.09053 11.3512C1.85541 10.9748 1.51735 10.3081 1.35306 9.89483C1.34606 9.87701 0.823529 8.54933 0.823529 7.38809C0.823529 3.79357 3.59429 0.869187 7 0.869187C10.4057 0.869187 13.1765 3.79357 13.1765 7.38809C13.1765 8.55106 12.6527 9.88223 12.6474 9.89526Z"
+                    fill="#ADADAD"
+                  />
+                  <path
+                    d="M13.2647 5.50005C15.1596 8.50005 9.159 16.5 7.10614 19.5L2.84247 13C-2.46337 5.8 2.52668 1.6667 5.68494 0.500047C10.2328 -0.699943 12.6331 3.33338 13.2647 5.50005Z"
+                    fill="#ADADAD"
+                  />
+                  <ellipse
+                    cx="7.10594"
+                    cy="7.5"
+                    rx="3.31615"
+                    ry="3.5"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.00008 3.47705C4.95649 3.47705 3.29419 5.23194 3.29419 7.38839C3.29419 9.54485 4.95649 11.2997 7.00008 11.2997C9.04367 11.2997 10.706 9.54485 10.706 7.38839C10.706 5.23194 9.04367 3.47705 7.00008 3.47705ZM7.00008 10.4305C5.41107 10.4305 4.11772 9.06592 4.11772 7.38839C4.11772 5.71086 5.41107 4.34624 7.00008 4.34624C8.58908 4.34624 9.88243 5.71086 9.88243 7.38839C9.88243 9.06592 8.58908 10.4305 7.00008 10.4305Z"
+                    fill="#ADADAD"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="container-info-description">
+              <h3 class="info-item">Activity</h3>
+              <div class="d-flex">
+                <p class="info-item-description">Your Activity</p>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.5">
+                    <circle cx="10" cy="10" r="9.5" stroke="black" />
+                    <circle cx="10" cy="10" r="1.5" stroke="black" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <div class="ms-5">
+              <h3 class="info-item">Date</h3>
+              <div class="d-flex">
+                <p class="info-item-description">Your Date</p>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="3.33325"
+                    y="9.47369"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="14.4443"
+                    y="9.47369"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="12.2222"
+                    y="9.47369"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="10"
+                    y="9.47369"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="7.77783"
+                    y="9.47369"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="5.55566"
+                    y="9.47369"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="3.33325"
+                    y="15.7895"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="14.4443"
+                    y="15.7895"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="12.2222"
+                    y="15.7895"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="10"
+                    y="15.7895"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="7.77783"
+                    y="15.7895"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="5.55566"
+                    y="15.7895"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="3.33325"
+                    y="11.5789"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="14.4443"
+                    y="11.5789"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="12.2222"
+                    y="11.5789"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="10"
+                    y="11.5789"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="7.77783"
+                    y="11.5789"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="5.55566"
+                    y="11.5789"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="3.33325"
+                    y="13.6842"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="14.4443"
+                    y="13.6842"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="12.2222"
+                    y="13.6842"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="10"
+                    y="13.6842"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="7.77783"
+                    y="13.6842"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="5.55566"
+                    y="13.6842"
+                    width="1.11111"
+                    height="1.05263"
+                    fill="#808080"
+                  />
+                  <rect
+                    x="0.5"
+                    y="1.55263"
+                    width="19"
+                    height="17.9474"
+                    rx="1.5"
+                    stroke="#808080"
+                  />
+                  <path
+                    d="M0.5 6.8158H19.5V18C19.5 18.8284 18.8284 19.5 18 19.5H2C1.17157 19.5 0.5 18.8284 0.5 18V6.8158Z"
+                    stroke="#808080"
+                  />
+                  <line
+                    x1="6.05566"
+                    y1="-1.96701e-08"
+                    x2="6.05566"
+                    y2="4.21053"
+                    stroke="#808080"
+                  />
+                  <line
+                    x1="14.9443"
+                    y1="-1.96701e-08"
+                    x2="14.9443"
+                    y2="4.21053"
+                    stroke="#808080"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-search">
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.139 21.6665L17.5852 16.1126C18.9623 14.4116 19.7915 12.2502 19.7915 9.89605C19.7915 4.43986 15.3519 0.000305176 9.8957 0.000305176C4.43951 0.000305176 0 4.43981 0 9.89601C0 15.3522 4.43956 19.7918 9.89575 19.7918C12.2499 19.7918 14.4113 18.9626 16.1123 17.5855L21.6662 23.1393C21.8693 23.3425 22.1359 23.4446 22.4026 23.4446C22.6693 23.4446 22.936 23.3425 23.1391 23.1393C23.5464 22.7321 23.5464 22.0737 23.139 21.6665ZM9.89575 17.7084C5.58745 17.7084 2.08333 14.2043 2.08333 9.89601C2.08333 5.5877 5.58745 2.08358 9.89575 2.08358C14.2041 2.08358 17.7082 5.5877 17.7082 9.89601C17.7082 14.2043 14.204 17.7084 9.89575 17.7084Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <section
+        class="d-flex flex-column align-items-center justify-content-center"
+      >
+        <h3 class="section-title">Recomended Building</h3>
+        <p class="section-subtitle">
+          The most Brilliant reason NotCube has to be most Convenient and Cheap
+        </p>
+
+        <div
+          class="container-fluid d-flex flex-wrap w-100 justify-content-lg-between justify-content-center gap-3"
+        >
+          <div class="container-card">
+            <div class="position-relative">
+              <img
+                src="./assets/img/recomended-picture-1.png"
+                class="img-fluid img-card"
+                alt="hero picture"
+              />
+              <p class="badge">4.6</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h4 class="card-title">High Fly</h4>
+              <p class="card-price">$430</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex">
+                <svg
+                  width="14"
+                  height="20"
+                  viewBox="0 0 14 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 0C3.14012 0 0 3.31421 0 7.38809C0 8.72925 0.569882 10.1717 0.593765 10.2325C0.777824 10.6936 1.141 11.4098 1.40288 11.8296L6.20241 19.505C6.39882 19.8196 6.68953 20 7 20C7.31047 20 7.60118 19.8196 7.79759 19.5054L12.5975 11.8296C12.8598 11.4098 13.2226 10.6936 13.4066 10.2325C13.4305 10.1721 14 8.72968 14 7.38809C14 3.31421 10.8599 0 7 0ZM12.6474 9.89526C12.4831 10.3086 12.145 10.9748 11.9099 11.3512L7.10994 19.0269C7.01524 19.1786 6.98518 19.1786 6.89047 19.0269L2.09053 11.3512C1.85541 10.9748 1.51735 10.3081 1.35306 9.89483C1.34606 9.87701 0.823529 8.54933 0.823529 7.38809C0.823529 3.79357 3.59429 0.869187 7 0.869187C10.4057 0.869187 13.1765 3.79357 13.1765 7.38809C13.1765 8.55106 12.6527 9.88223 12.6474 9.89526Z"
+                    fill="#ADADAD"
+                  />
+                  <path
+                    d="M13.2647 5.50005C15.1596 8.50005 9.159 16.5 7.10614 19.5L2.84247 13C-2.46337 5.8 2.52668 1.6667 5.68494 0.500047C10.2328 -0.699943 12.6331 3.33338 13.2647 5.50005Z"
+                    fill="#ADADAD"
+                  />
+                  <ellipse
+                    cx="7.10594"
+                    cy="7.5"
+                    rx="3.31615"
+                    ry="3.5"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.00008 3.47705C4.95649 3.47705 3.29419 5.23194 3.29419 7.38839C3.29419 9.54485 4.95649 11.2997 7.00008 11.2997C9.04367 11.2997 10.706 9.54485 10.706 7.38839C10.706 5.23194 9.04367 3.47705 7.00008 3.47705ZM7.00008 10.4305C5.41107 10.4305 4.11772 9.06592 4.11772 7.38839C4.11772 5.71086 5.41107 4.34624 7.00008 4.34624C8.58908 4.34624 9.88243 5.71086 9.88243 7.38839C9.88243 9.06592 8.58908 10.4305 7.00008 10.4305Z"
+                    fill="#ADADAD"
+                  />
+                </svg>
+                <p class="ms-2 location">Gambir, Jakarta</p>
+              </div>
+              <p class="location">Per hour</p>
+            </div>
+          </div>
+
+          <div class="container-card">
+            <div class="position-relative">
+              <img
+                src="./assets/img/recomended-picture-2.png"
+                class="img-fluid img-card"
+                alt="hero picture"
+              />
+              <p class="badge">4.8</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h4 class="card-title">Stone Mountain</h4>
+              <p class="card-price">$700</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex">
+                <svg
+                  width="14"
+                  height="20"
+                  viewBox="0 0 14 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 0C3.14012 0 0 3.31421 0 7.38809C0 8.72925 0.569882 10.1717 0.593765 10.2325C0.777824 10.6936 1.141 11.4098 1.40288 11.8296L6.20241 19.505C6.39882 19.8196 6.68953 20 7 20C7.31047 20 7.60118 19.8196 7.79759 19.5054L12.5975 11.8296C12.8598 11.4098 13.2226 10.6936 13.4066 10.2325C13.4305 10.1721 14 8.72968 14 7.38809C14 3.31421 10.8599 0 7 0ZM12.6474 9.89526C12.4831 10.3086 12.145 10.9748 11.9099 11.3512L7.10994 19.0269C7.01524 19.1786 6.98518 19.1786 6.89047 19.0269L2.09053 11.3512C1.85541 10.9748 1.51735 10.3081 1.35306 9.89483C1.34606 9.87701 0.823529 8.54933 0.823529 7.38809C0.823529 3.79357 3.59429 0.869187 7 0.869187C10.4057 0.869187 13.1765 3.79357 13.1765 7.38809C13.1765 8.55106 12.6527 9.88223 12.6474 9.89526Z"
+                    fill="#ADADAD"
+                  />
+                  <path
+                    d="M13.2647 5.50005C15.1596 8.50005 9.159 16.5 7.10614 19.5L2.84247 13C-2.46337 5.8 2.52668 1.6667 5.68494 0.500047C10.2328 -0.699943 12.6331 3.33338 13.2647 5.50005Z"
+                    fill="#ADADAD"
+                  />
+                  <ellipse
+                    cx="7.10594"
+                    cy="7.5"
+                    rx="3.31615"
+                    ry="3.5"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.00008 3.47705C4.95649 3.47705 3.29419 5.23194 3.29419 7.38839C3.29419 9.54485 4.95649 11.2997 7.00008 11.2997C9.04367 11.2997 10.706 9.54485 10.706 7.38839C10.706 5.23194 9.04367 3.47705 7.00008 3.47705ZM7.00008 10.4305C5.41107 10.4305 4.11772 9.06592 4.11772 7.38839C4.11772 5.71086 5.41107 4.34624 7.00008 4.34624C8.58908 4.34624 9.88243 5.71086 9.88243 7.38839C9.88243 9.06592 8.58908 10.4305 7.00008 10.4305Z"
+                    fill="#ADADAD"
+                  />
+                </svg>
+                <p class="ms-2 location">Padalarang, Bandung</p>
+              </div>
+              <p class="location">Per hour</p>
+            </div>
+          </div>
+
+          <div class="container-card">
+            <div class="position-relative">
+              <img
+                src="./assets/img/recomended-picture-3.png"
+                class="img-fluid img-card"
+                alt="hero picture"
+              />
+              <p class="badge">4.9</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h4 class="card-title">White Building</h4>
+              <p class="card-price">$380</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex">
+                <svg
+                  width="14"
+                  height="20"
+                  viewBox="0 0 14 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 0C3.14012 0 0 3.31421 0 7.38809C0 8.72925 0.569882 10.1717 0.593765 10.2325C0.777824 10.6936 1.141 11.4098 1.40288 11.8296L6.20241 19.505C6.39882 19.8196 6.68953 20 7 20C7.31047 20 7.60118 19.8196 7.79759 19.5054L12.5975 11.8296C12.8598 11.4098 13.2226 10.6936 13.4066 10.2325C13.4305 10.1721 14 8.72968 14 7.38809C14 3.31421 10.8599 0 7 0ZM12.6474 9.89526C12.4831 10.3086 12.145 10.9748 11.9099 11.3512L7.10994 19.0269C7.01524 19.1786 6.98518 19.1786 6.89047 19.0269L2.09053 11.3512C1.85541 10.9748 1.51735 10.3081 1.35306 9.89483C1.34606 9.87701 0.823529 8.54933 0.823529 7.38809C0.823529 3.79357 3.59429 0.869187 7 0.869187C10.4057 0.869187 13.1765 3.79357 13.1765 7.38809C13.1765 8.55106 12.6527 9.88223 12.6474 9.89526Z"
+                    fill="#ADADAD"
+                  />
+                  <path
+                    d="M13.2647 5.50005C15.1596 8.50005 9.159 16.5 7.10614 19.5L2.84247 13C-2.46337 5.8 2.52668 1.6667 5.68494 0.500047C10.2328 -0.699943 12.6331 3.33338 13.2647 5.50005Z"
+                    fill="#ADADAD"
+                  />
+                  <ellipse
+                    cx="7.10594"
+                    cy="7.5"
+                    rx="3.31615"
+                    ry="3.5"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.00008 3.47705C4.95649 3.47705 3.29419 5.23194 3.29419 7.38839C3.29419 9.54485 4.95649 11.2997 7.00008 11.2997C9.04367 11.2997 10.706 9.54485 10.706 7.38839C10.706 5.23194 9.04367 3.47705 7.00008 3.47705ZM7.00008 10.4305C5.41107 10.4305 4.11772 9.06592 4.11772 7.38839C4.11772 5.71086 5.41107 4.34624 7.00008 4.34624C8.58908 4.34624 9.88243 5.71086 9.88243 7.38839C9.88243 9.06592 8.58908 10.4305 7.00008 10.4305Z"
+                    fill="#ADADAD"
+                  />
+                </svg>
+                <p class="ms-2 location">Kebun Raya, Bogor</p>
+              </div>
+              <p class="location">Per hour</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-flex flex-column w-100 align-items-center mb-5">
+        <h3 class="section-title">Gallery</h3>
+        <p class="section-subtitle">
+          This photo is from some of EzStay Favorite buildings
+        </p>
+
+        <div
+          class="d-flex flex-wrap w-100 justify-content-lg-between justify-content-center gap-4"
+        >
+          <div>
+            <img
+              src="./assets/img/gallery-1.png"
+              class="img-fluid"
+              alt="hero picture"
+            />
+          </div>
+          <div class="container-card-gallery">
+            <div class="card-gallery">
+              <img
+                src="./assets/img/gallery-2.png"
+                class="img-fluid img-coba"
+                alt="hero picture"
+              />
+
+              <div class="container-badge">
+                <svg
+                  width="16"
+                  height="15"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                    fill="#3A8375"
+                  />
+                </svg>
+                <div>4.9</div>
+              </div>
+
+              <h3 class="card-gallery-title">Glasses House</h3>
+
+              <div class="container-place">
+                <svg
+                  width="14"
+                  height="20"
+                  viewBox="0 0 14 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 0C3.14012 0 0 3.31421 0 7.38809C0 8.72925 0.569882 10.1717 0.593765 10.2325C0.777824 10.6936 1.141 11.4098 1.40288 11.8296L6.20241 19.505C6.39882 19.8196 6.68953 20 7 20C7.31047 20 7.60118 19.8196 7.79759 19.5054L12.5975 11.8296C12.8598 11.4098 13.2226 10.6936 13.4066 10.2325C13.4305 10.1721 14 8.72968 14 7.38809C14 3.31421 10.8599 0 7 0ZM12.6474 9.89526C12.4831 10.3086 12.145 10.9748 11.9099 11.3512L7.10994 19.0269C7.01524 19.1786 6.98518 19.1786 6.89047 19.0269L2.09053 11.3512C1.85541 10.9748 1.51735 10.3081 1.35306 9.89483C1.34606 9.87701 0.823529 8.54933 0.823529 7.38809C0.823529 3.79357 3.59429 0.869187 7 0.869187C10.4057 0.869187 13.1765 3.79357 13.1765 7.38809C13.1765 8.55106 12.6527 9.88223 12.6474 9.89526Z"
+                    fill="#ADADAD"
+                  />
+                  <path
+                    d="M13.2647 5.50005C15.1596 8.50005 9.159 16.5 7.10614 19.5L2.84247 13C-2.46337 5.8 2.52668 1.6667 5.68494 0.500047C10.2328 -0.699943 12.6331 3.33338 13.2647 5.50005Z"
+                    fill="#ADADAD"
+                  />
+                  <ellipse
+                    cx="7.10619"
+                    cy="7.5"
+                    rx="3.31615"
+                    ry="3.5"
+                    fill="#564535"
+                  />
+                  <path
+                    d="M7.00008 3.47705C4.95649 3.47705 3.29419 5.23194 3.29419 7.38839C3.29419 9.54485 4.95649 11.2997 7.00008 11.2997C9.04367 11.2997 10.706 9.54485 10.706 7.38839C10.706 5.23194 9.04367 3.47705 7.00008 3.47705ZM7.00008 10.4305C5.41107 10.4305 4.11772 9.06592 4.11772 7.38839C4.11772 5.71086 5.41107 4.34624 7.00008 4.34624C8.58908 4.34624 9.88243 5.71086 9.88243 7.38839C9.88243 9.06592 8.58908 10.4305 7.00008 10.4305Z"
+                    fill="#ADADAD"
+                  />
+                </svg>
+                <p>KBP, Bandung</p>
+              </div>
+
+              <button class="button-down">
+                <svg
+                  width="34"
+                  height="20"
+                  viewBox="0 0 34 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="23.9068"
+                    height="3.98447"
+                    rx="1.99223"
+                    transform="matrix(0.697001 -0.71707 0.697001 0.71707 14.5596 17.1429)"
+                    fill="white"
+                  />
+                  <rect
+                    width="23.9068"
+                    height="3.98447"
+                    rx="1.99223"
+                    transform="matrix(0.697001 0.71707 -0.697001 0.71707 2.7771 0)"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-lg-between gap-3">
+            <div>
+              <img
+                src="./assets/img/gallery-3.png"
+                class="img-fluid img-coba"
+                alt="hero picture"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/img/gallery-4.png"
+                class="img-fluid img-coba"
+                alt="hero picture"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
