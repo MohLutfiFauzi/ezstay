@@ -167,7 +167,7 @@ body {
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
     .banner-title {
         position: absolute;
         font-size: 3rem;
